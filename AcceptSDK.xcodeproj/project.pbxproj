@@ -22,6 +22,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		8D33318297D15F72C97A0622 /* Pods_AcceptSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5BABDEDCA6DA0F77F579184 /* Pods_AcceptSDK.framework */; };
 		8DCBB2A41D3F4B8100E6FDDA /* SecurePaymentContainerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A027CA631D3A02D7007A8D73 /* SecurePaymentContainerRequest.swift */; };
 		8DCBB2A51D3F4E6700E6FDDA /* FingerPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A027CA611D3A0062007A8D73 /* FingerPrint.swift */; };
 		8DCBB2A61D3F4E6A00E6FDDA /* MerchantAuthenticaton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A027CA5F1D39FFA3007A8D73 /* MerchantAuthenticaton.swift */; };
@@ -44,7 +45,6 @@
 		8DCBB2BB1D3F6C4C00E6FDDA /* WebCheckOutDataTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCBB2BA1D3F6C4C00E6FDDA /* WebCheckOutDataTypeTests.swift */; };
 		8DCBB2BD1D3F8BD700E6FDDA /* FingerPrintTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCBB2BC1D3F8BD700E6FDDA /* FingerPrintTests.swift */; };
 		8DCBB2BF1D3FAF5600E6FDDA /* MerchantAuthenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCBB2BE1D3FAF5500E6FDDA /* MerchantAuthenticationTests.swift */; };
-		93E9A0F4B9FA49B7256A5130 /* Pods_AcceptSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5BABDEDCA6DA0F77F579184 /* Pods_AcceptSDK.framework */; };
 		9F3D4B68A1636676023F00ED /* Pods_AcceptSDKTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AB9615B0C6A7A92478FEB19 /* Pods_AcceptSDKTests.framework */; };
 		A0070CDB1D38AE0A008BD8D4 /* AcceptSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = A0070CDA1D38AE0A008BD8D4 /* AcceptSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A0070CE21D38AE0A008BD8D4 /* AcceptSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0070CD71D38AE0A008BD8D4 /* AcceptSDK.framework */; };
@@ -129,7 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93E9A0F4B9FA49B7256A5130 /* Pods_AcceptSDK.framework in Frameworks */,
+				8D33318297D15F72C97A0622 /* Pods_AcceptSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +296,6 @@
 				A0070CD31D38AE0A008BD8D4 /* Frameworks */,
 				A0070CD41D38AE0A008BD8D4 /* Headers */,
 				A0070CD51D38AE0A008BD8D4 /* Resources */,
-				ECD9DD6278B8FC3B297ADFCF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -315,8 +314,6 @@
 				A0070CDD1D38AE0A008BD8D4 /* Sources */,
 				A0070CDE1D38AE0A008BD8D4 /* Frameworks */,
 				A0070CDF1D38AE0A008BD8D4 /* Resources */,
-				8E5127877BB46D69D0CC18B9 /* [CP] Embed Pods Frameworks */,
-				8FD38D9E37A281E8F6BBC50F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -335,16 +332,17 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Ramamurthy, Rakesh Ramamurthy";
 				TargetAttributes = {
 					A0070CD61D38AE0A008BD8D4 = {
 						CreatedOnToolsVersion = 7.3;
 						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
 					};
 					A0070CE01D38AE0A008BD8D4 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = 8WQ4DJVQC2;
+						DevelopmentTeam = A8P36FR3BZ;
 						LastSwiftMigration = 0900;
 					};
 					A0070D1C1D38B017008BD8D4 = {
@@ -390,36 +388,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8E5127877BB46D69D0CC18B9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AcceptSDKTests/Pods-AcceptSDKTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8FD38D9E37A281E8F6BBC50F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AcceptSDKTests/Pods-AcceptSDKTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		A0070D201D38B01E008BD8D4 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -468,21 +436,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		ECD9DD6278B8FC3B297ADFCF /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AcceptSDK/Pods-AcceptSDK-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -573,12 +526,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -630,12 +585,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -674,8 +631,11 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -687,9 +647,10 @@
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.visa.com.AcceptSDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
@@ -700,8 +661,11 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -713,8 +677,9 @@
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.visa.com.AcceptSDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Release;
@@ -723,7 +688,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 05F5BE570E61E8AD84559E8B /* Pods-AcceptSDKTests.debug.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 8WQ4DJVQC2;
+				DEVELOPMENT_TEAM = A8P36FR3BZ;
 				INFOPLIST_FILE = AcceptSDKTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
@@ -737,7 +702,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D6D244A02E3C298A2057C19C /* Pods-AcceptSDKTests.release.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 8WQ4DJVQC2;
+				DEVELOPMENT_TEAM = A8P36FR3BZ;
 				INFOPLIST_FILE = AcceptSDKTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
